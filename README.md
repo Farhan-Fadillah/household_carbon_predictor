@@ -48,6 +48,8 @@ Why Linear Regression?
    3. Good Baseline Model: It serves as a strong baseline to understand relationships before exploring more complex models.
    4. Efficiency: It trains quickly and requires less computational resources, ideal for your project scope.
 
+![linier](https://github.com/Farhan-Fadillah/picture_list/blob/e765fc92f2375b9199f5b859e692510854e4db9a/linier%20regress.png)
+
 How the Model Works?
 The model learns coefficients (weights) for each input feature to best fit the target carbon emissions. It minimizes the difference between predicted and actual carbon emissions using the least squares method. The model's performance is evaluated using the R² score, which measures how well the model explains the variance in the data
 
