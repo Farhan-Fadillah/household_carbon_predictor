@@ -25,3 +25,71 @@ To bridge this gap, this project introduces a Machine Learning–based Household
 
 # Why This Project Matters
 Tackling climate change requires both top down and bottom up strategies. This project addresses the often-overlooked bottom-up component by empowering individuals the smallest units of society to participate meaningfully in climate action. By leveraging machine learning to deliver personalized, actionable, and educational insights, the Household Carbon Predictor not only raises awareness but also inspires tangible change. In doing so, it contributes to a more sustainable and informed society, aligned with global environmental goals such as those outlined in the Paris Agreement and the United Nations Sustainable Development Goals (SDGs).
+
+# Dataset Description
+
+The Dataset consists of four columns:
+1. electricity_kwh = Monthly electricity consumption (kWh)
+2. gas_m3 = Monthly gas consumption (cubic meters)
+3. transport_km = Monthly transportation distance traveled (km)
+4. carbon_kg = Monthly carbon emissions in kilograms (target)
+
+Notes:
+•	The first three columns are input features representing household energy and transport usage.
+•	The last column, carbon_kg, is the target variable representing the carbon footprint to be predicted.
+
+This dataset captures key household activities that contribute to carbon emissions, making it suitable for modeling carbon footprint prediction.
+
+# Machine Learning Model: Linear Regression
+
+Why Linear Regression?
+   1. Simplicity & Interpretability: Linear regression is straightforward and provides clear insight into how each feature (electricity, gas, transport) contributes to carbon emissions.
+   2. Suitability for Continuous Target: Since carbon emissions are continuous numeric values, linear regression is a natural choice.
+   3. Good Baseline Model: It serves as a strong baseline to understand relationships before exploring more complex models.
+   4. Efficiency: It trains quickly and requires less computational resources, ideal for your project scope.
+
+How the Model Works?
+The model learns coefficients (weights) for each input feature to best fit the target carbon emissions. It minimizes the difference between predicted and actual carbon emissions using the least squares method. The model's performance is evaluated using the R² score, which measures how well the model explains the variance in the data
+
+# Project Flow Overview
+Step-by-step Flow
+   1.	Data Input: User inputs monthly household data: electricity consumption (kWh), gas consumption (m³), and transport distance (km).
+   2.	Model Training:
+      •	The dataset is split into training and testing sets (80% train, 20% test).
+     	•	Linear regression model is trained on the training data.
+     	•	Model performance is evaluated on the test set using R² score.
+     	•	The trained model is saved to disk for reuse.
+   3. Prediction:
+      When the user inputs new data, the saved model is loaded. The model predicts the estimated carbon emissions based on the input features.
+   4. Streamlit App Interface:
+      - User-friendly web app for inputting data and viewing results.
+      - Displays predicted carbon emissions.
+      - Visualizes comparison between user emissions and average national emissions.
+      - Provides personalized environmental recommendations if emissions exceed certain thresholds.
+   5. Recommendations System:
+      - If electricity consumption > 300 kWh, suggests reducing electricity use.
+      - If gas consumption > 40 m³, suggests better home insulation or alternative cooking methods.
+      - If transport distance > 250 km, suggests using public transport or carpooling.
+      - If none of these thresholds are exceeded, encourages maintaining current eco-friendly habits.
+
+# Streamlit App Features
+Features:
+1. Input Fields = Number inputs for electricity, gas, and transport consumption.
+2. Carbon Emission Prediction	= Displays predicted carbon emissions in kg CO₂ per month.
+3. Visualization = Bar chart comparing user emissions with average national emissions.
+4. Environmental Tips = Dynamic recommendations based on user input to encourage greener habits.
+5. Model Training & Loading = Automatically trains the model if not found, then loads the saved model for predictions.
+6. User Interface	= Clean, intuitive layout with titles, captions, and success/info messages for user feedback.
+
+# Flow Diagram 
+
+# Summary
+The project effectively combines a simple yet powerful linear regression model with an interactive Streamlit app to predict household carbon emissions. The dataset features are well-chosen to represent key emission sources, and the model choice balances accuracy with interpretability. The app enhances user engagement by visualizing results and providing actionable recommendations, encouraging sustainable behavior.
+
+
+
+
+
+
+
+
