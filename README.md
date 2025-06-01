@@ -81,6 +81,10 @@ Features:
 5. Model Training & Loading = Automatically trains the model if not found, then loads the saved model for predictions.
 6. User Interface	= Clean, intuitive layout with titles, captions, and success/info messages for user feedback.
 
+![household_app](https://github.com/Farhan-Fadillah/picture_list/blob/a42aece13c0df38680f843492837e4fde63e7ab8/household%20app.png)
+
+![household_app_result](https://github.com/Farhan-Fadillah/picture_list/blob/a42aece13c0df38680f843492837e4fde63e7ab8/household%20app%20result.png)
+
 # Flow Diagram 
 
 # Summary
