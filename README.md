@@ -88,6 +88,7 @@ Features:
 ![household_app_result](https://github.com/Farhan-Fadillah/picture_list/blob/a42aece13c0df38680f843492837e4fde63e7ab8/household%20app%20result.png)
 
 # Flow Diagram 
+![flow_household](https://github.com/Farhan-Fadillah/picture_list/blob/55704f385501af586583832255d4a0204062bdae/FLOW%20HOUSEHOLD%20ML.png)
 
 # Summary
 The project effectively combines a simple yet powerful linear regression model with an interactive Streamlit app to predict household carbon emissions. The dataset features are well-chosen to represent key emission sources, and the model choice balances accuracy with interpretability. The app enhances user engagement by visualizing results and providing actionable recommendations, encouraging sustainable behavior.
