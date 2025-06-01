@@ -1,4 +1,4 @@
-# household_carbon_predictor
+# Household Carbon Predictor Machine Learning : A Small Step, Big Impact
 As the global climate crisis intensifies, the need for collective action to reduce greenhouse gas emissions has never been more urgent. While governments and industries play a pivotal role in addressing environmental degradation, the impact of individual households is often underestimated. In reality, everyday activities such as energy consumption, transportation choices, and food habits at the household level significantly contribute to a country's overall carbon footprint.
 
 ![house](https://github.com/Farhan-Fadillah/picture_list/blob/df666f301915220c7d2273d31c5124cfd8eee6dc/household.jpg)
