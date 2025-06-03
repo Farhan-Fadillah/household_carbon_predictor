@@ -93,6 +93,9 @@ Features:
 # Summary
 The project effectively combines a simple yet powerful linear regression model with an interactive Streamlit app to predict household carbon emissions. The dataset features are well-chosen to represent key emission sources, and the model choice balances accuracy with interpretability. The app enhances user engagement by visualizing results and providing actionable recommendations, encouraging sustainable behavior.
 
+# Application Link
+[Click Here](https://household-carbon-predictor.streamlit.app)
+
 
 
 
